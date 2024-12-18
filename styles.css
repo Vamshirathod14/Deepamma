@@ -1,0 +1,94 @@
+body {
+    background-color: #E0F7FA; /* Light Pastel Blue */
+    font-family: 'Lato', sans-serif; /* Modern sans-serif font */
+    text-align: center;
+    color: #2C3E50; /* Dark Slate Gray */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Limit the width for larger screens */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+h1 {
+    color: #FF6F61; /* Soft Coral */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 2.5em; /* Responsive font size */
+}
+
+p {
+    font-size: 1.2em; /* Responsive font size */
+    color: #333; /* Darker text for readability */
+}
+
+#animateButton {
+    padding: 10px 20px;
+    font-size: 1em; /* Responsive font size */
+    background-color: #FFB6C1; /* Soft Pink */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#animateButton:hover {
+    background-color: #FF6F61; /* Change to Soft Coral on hover */
+}
+
+#animationArea {
+    margin-top: 20px;
+}
+
+.messages {
+    margin: 20px 0;
+}
+
+.message {
+    font-size: 1.1em; /* Responsive font size */
+    color: #2C3E50; /* Dark Slate Gray */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s; /* Smooth transition for visibility */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    p {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
+
+    #animateButton {
+        padding: 8px 16px; /* Adjust button padding */
+        font-size: 0.9em; /* Smaller font size for smaller screens */
+    }
+
+    .message {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Further reduce font size for very small screens */
+    }
+
+    p {
+        font-size: 0.9em; /* Further reduce font size for very small screens */
+    }
+
+    #animateButton {
+        padding: 6px 12px; /* Adjust button padding */
+        font-size: 0.8em; /* Smaller font size for very small screens */
+    }
+
+    .message {
+        font-size: 0.9em; /* Smaller font size for very small screens */
+    }
+}
